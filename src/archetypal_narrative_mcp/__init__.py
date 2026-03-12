@@ -16,7 +16,7 @@ Cost optimization: 85% zero-cost operations through categorical composition.
 
 __version__ = "1.0.0"
 __author__ = "Dal Marsters"
-__email__ = "dal@lushy.app"
+__email__ = "dal@lushyai.com"
 
 __all__ = [
     "__version__",
@@ -24,15 +24,17 @@ __all__ = [
     "__email__",
 ]
 
-# Export core constants for external use
+# Export core constants and server instance for external use
 from archetypal_narrative_mcp.server import (
     ARCHETYPAL_ARCS,
     AFFECTIVE_DIMENSIONS,
     AFFECTIVE_SEQUENCES,
+    mcp,
 )
 
 __all__.extend([
     "ARCHETYPAL_ARCS",
-    "AFFECTIVE_DIMENSIONS", 
+    "AFFECTIVE_DIMENSIONS",
     "AFFECTIVE_SEQUENCES",
+    "mcp",
 ])

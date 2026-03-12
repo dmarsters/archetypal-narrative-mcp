@@ -1052,5 +1052,8 @@ def _describe_temporality(t: float) -> str:
     if t > 0.4: return "time pressure building"
     return "timeless/stable"
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+if __name__ == "__main__":
+    main()
